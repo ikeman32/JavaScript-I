@@ -57,11 +57,22 @@ const intern5 = {
         return reply;
     }
 }
+let interns = [intern1, intern2, intern3, intern4, intern5];
+console.log("objects.js Challenge 1\n\n");
+let count = 0;
+for (i = 0; i < interns.length; i++) {
+    count += 1;
+    for (let [key, value] of Object.entries(interns[i])) {
+        console.log("Intern" + count + "\n" + `${key}: ${value}` + "\n\n");
+    }
+}
+
+
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
-
+console.log("objects.js Challenge 2\n\n");
 // Mitzi's name
 console.log(intern1.name);
 // Kennan's ID
@@ -75,6 +86,7 @@ console.log(intern5.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
+console.log("objects.js Challenge 3\n\n");
 console.log(intern2.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
@@ -88,7 +100,7 @@ console.log(intern5.multiplyNums(3, 4));
 // 2. Nest a child object in the parent object with name and age as well.  The name will be George and the age will be 50.
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
-
+console.log("objects.js Stretch \n\n");
 const parent = {
     name: "Susan",
     age: 70,

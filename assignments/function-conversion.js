@@ -1,5 +1,5 @@
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
-
+console.log("funtion-conversion.js Challenge \n\n");
 let myFunction = () => {
     console.log("Function was invoked!");
 };
@@ -22,7 +22,7 @@ console.log(subtract(1, 2));
 
 
 // Stretch
-
+console.log("funtion-conversion.js Stretch \n\n");
 exampleArray = [1, 2, 3, 4];
 const triple = exampleArray.map((num) => {
     return num * 3;
